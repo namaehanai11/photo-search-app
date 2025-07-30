@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>写真検索アプリ</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+    }
+    input {
+      padding: 5px;
+      width: 300px;
+    }
+    button {
+      padding: 5px 10px;
+    }
+    .result {
+      margin-top: 20px;
+    }
+    .person {
+      margin-bottom: 20px;
+    }
+    img {
+      max-width: 200px;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>掛け軸検索アプリ</h1>
+  <p>名前や特徴を入力してください：</p>
+  <input type="text" id="searchInput" placeholder="例：春,夏,名称など" />
+  <button onclick="search()">検索</button>
+
+    <h2>新しい掛け軸の登録</h2>
+  <p>名前: <input type="text" id="nameInput" /></p>
+  <p>特徴（カンマ区切り）: <input type="text" id="featuresInput" /></p>
+  <p>画像ファイル名（例: momiji.jpg）: <input type="text" id="imageInput" /></p>
+  <button onclick="addKakejiku()">追加</button>
+  <button onclick="downloadJSON()">JSON保存</button>
+
+  <div id="result" class="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
