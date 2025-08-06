@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>掛け軸アップロードフォーム</title>
+  <style>
+    /* スマホやタブレットでも見やすいようにレスポンシブデザイン */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+    }
+
+    /* フォームのスタイル */
+    form {
+      margin: 20px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    form p {
+      margin: 10px 0;
+    }
+
+    form input, form button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    form button {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    form button:hover {
+      background-color: #45a049;
+    }
+
+    /* レスポンシブデザイン: 600px以下の画面サイズ向け */
+    @media (max-width: 600px) {
+      body {
+        font-size: 14px;
+      }
+
+      form {
+        padding: 15px;
+      }
+
+      form input, form button {
+        padding: 12px;
+        font-size: 16px;
+      }
+
+      h1, h2 {
+        font-size: 18px;
+      }
+
+      h3 {
+        font-size: 16px;
+      }
+
+      img {
+        width: 100%; /* 画像を画面サイズに合わせる */
+      }
+    }
+
+    /* 通常サイズの画面向け */
+    @media (min-width: 601px) {
+      .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .image-card {
+        width: 45%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- コンテンツをここに追加 -->
+</body>
+</html>
